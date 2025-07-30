@@ -10,6 +10,9 @@ for i in range(quantity_of_profuctos_add):
     category_product = input("Ingrese de que categoria es la prenda (ej niño,niña,mujer): ")
     size_product = input("Ingrese la talla del producto (ej S, L, M, XL): ")
     unit_price = float(input("Ingrese el precio de la prenda: "))
+    while unit_price <= 0:
+        print(f"El percio {unit_price} no es mayor a cero, porfavor intentelo otra vez")
+        unit_price = float(input("Ingrese el precio de la prenda: "))
     stock_quantity = int(input("Ingrese la cantidad de stock: "))
     inventory[code] = {
         "Nombre": name_of_product,
