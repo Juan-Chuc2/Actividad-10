@@ -4,7 +4,7 @@ for i in range(quantity_of_profuctos_add):
     print(f"\n Prenda {1+i}")
     code = input("Ingrese el codigo de la prenda: ")
     while code in inventory:
-        print(f"El codigo {code} ya existe en el inventario")
+        print(f"El codigo {code} de la prenda ya existe en el inventario")
         code = input("Ingrese el codigo de la prenda: ")
     name_of_product = input("Ingrese el nombre de la prenda (ej Pantalon, Playera, etc): ")
     category_product = input("Ingrese de que categoria es la prenda (ej niño,niña,mujer): ")
