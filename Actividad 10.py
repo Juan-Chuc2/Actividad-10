@@ -24,3 +24,11 @@ for i in range(quantity_of_profuctos_add):
         "Precio Unitario": unit_price,
         "Stock": stock_quantity
     }
+print(f"\n ===Lista Completa de productos===")
+for code,product in inventory.items():
+    print(f"\n Codigo de la prenda: {code}")
+    print(f"Nombre de la prenda: {product['name_of_product']}")
+    print(f" Categoria de la prenda: {product['category_product']}")
+    print(f"Talla de la prenda: {product['size_product']}")
+    print(f"Precio de la prenda: {product['unit_price']}")
+    print(f"Cantidad de prendas {product['stock_quantity']}")
