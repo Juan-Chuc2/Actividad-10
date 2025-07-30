@@ -18,11 +18,11 @@ for i in range(quantity_of_profuctos_add):
         print(f"La cantidad {stock_quantity} de stock no es entera o positiva, Vuelva a intentarlo")
         stock_quantity = int(input("Ingrese la cantidad de stock: "))
     inventory[code] = {
-        "Nombre": name_of_product,
-        "Categoria": category_product,
-        "Talla": size_product,
-        "Precio Unitario": unit_price,
-        "Stock": stock_quantity
+        "name_of_product": name_of_product,
+        "category_product": category_product,
+        "size_product": size_product,
+        "unit_price": unit_price,
+        "stock_quantity": stock_quantity
     }
 print(f"\n ===Lista Completa de productos===")
 for code,product in inventory.items():
