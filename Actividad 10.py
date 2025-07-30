@@ -32,3 +32,17 @@ for code,product in inventory.items():
     print(f"Talla de la prenda: {product['size_product']}")
     print(f"Precio de la prenda: {product['unit_price']}")
     print(f"Cantidad de prendas {product['stock_quantity']}")
+
+if inventory:
+    print("\n Busqueda de una prenda")
+    search_product = input("Ingrese el codigo de la prenda a buscar: ")
+    if search_product in inventory:
+        print(f"Nombre de la prenda: {inventory[search_product]['name_of_product']}")
+        print(f" Categoria de la prenda: {inventory[search_product]['category_product']}")
+        print(f"Talla de la prenda: {inventory[search_product]['size_product']}")
+        print(f"Precio de la prenda: {inventory[search_product]['unit_price']}")
+        print(f"Cantidad de prendas {inventory[search_product]['stock_quantity']}")
+    else:
+        print(f"el codigo {search_product} no existe")
+else:
+    print("No se encontro ningun dato registrado en inventario ")
